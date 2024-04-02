@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens:{
+      'sm': '320px',
+      'md': '768px',
+    },
+
+    extend: {
+      backgroundImage: {
+        'header-background': "url('./header-bg_720.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+       }
+    },
   },
   plugins: [],
 }
